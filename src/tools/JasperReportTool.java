@@ -99,7 +99,7 @@ public class JasperReportTool {
 		
 		//System.out.println(file.toPath());
 		String res = Base64.getEncoder().encodeToString(Files.readAllBytes(file.toPath())); 		
-		//Files.delete(file.toPath());
+		Files.delete(file.toPath());
 		return res;
 	}
 	
